@@ -1,0 +1,26 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # 新しく追加するステップ
+      - name: Create docs directory
+        run: mkdir -p /github/workspace/docs
+
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v2
+        with:
+          ruby-version: '2.x'  # あなたのプロジェクトに合ったバージョンに変更してください
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build and deploy
+        run: |
+          bundle exec jekyll build
+          # 他のデプロイコマンドなどがあればここに追加
