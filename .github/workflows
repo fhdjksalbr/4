@@ -8,7 +8,7 @@ jobs:
 
       # 新しく追加するステップ
       - name: Create docs directory
-        run: mkdir -p /github/workspace/docs
+        run: mkdir -p docs
 
       - name: Set up Ruby
         uses: actions/setup-ruby@v2
