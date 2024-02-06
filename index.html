@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | 35th-album-missing.u</title>
@@ -9,11 +9,11 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width="960" height="600" tabindex="-1" style="width: 960px; height: 600px; cursor: default;"></canvas>
-      <div id="unity-loading-bar" style="display: none;">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full" style="width: 100%;"></div>
+          <div id="unity-progress-bar-full"></div>
         </div>
       </div>
       <div id="unity-warning"> </div>
@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/35th-album-missing.u.loader.js";
       var config = {
-        dataUrl: buildUrl + "/35th-album-missing.u.data.br",
-        frameworkUrl: buildUrl + "/35th-album-missing.u.framework.js.br",
-        codeUrl: buildUrl + "/35th-album-missing.u.wasm.br",
+        dataUrl: buildUrl + "/35th-album-missing.u.data.unityweb",
+        frameworkUrl: buildUrl + "/35th-album-missing.u.framework.js.unityweb",
+        codeUrl: buildUrl + "/35th-album-missing.u.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "35th-album-missing.u",
@@ -117,8 +117,6 @@
 
       document.body.appendChild(script);
 
-    </script><script src="Build/35th-album-missing.u.loader.js"></script>
-  
-
-<script src="Build/35th-album-missing.u.framework.js.br"></script></body>
+    </script>
+  </body>
 </html>
